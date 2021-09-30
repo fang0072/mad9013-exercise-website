@@ -1,0 +1,69 @@
+html{
+    background-color: blue;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.hero {
+    width: 100%;
+    color: white;
+    background-image: url(../image/banners/hero-home.jpg);
+    background-position: absolute;
+    letter-spacing: normal;
+    position:fixed;
+    margin: auto;
+    text-align: center;
+    
+    
+
+}
+
+
+.btn {
+    border: .125rem soild green;
+    border-radius: 5rem;
+    display: inline-block;
+    padding: .35em 2em .45em;
+    background-color: transparent;
+    text-align: center;
+    color: green;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: green;
+    border-color: green;
+    color: fff;
+
+
+}
+
+.action {
+    width: 100%;
+    color: white;
+    background-image: url(../image/banners/soccer-banner-bw.jpg);
+    background-position: center;
+    background-size: cover;
+    letter-spacing: normal;
+    text-align: center;
+    position:fixed;
+}
+
+.action button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: none;
+    text-align: center;
+    color: white;
+}
