@@ -1,69 +1,74 @@
 html{
-    background-color: blue;
-
+    background-color: #fff;
+    font-family: sans-serif;
 
 }
 
-
-
-
-
-
-
-
-
-
-.hero {
-    width: 100%;
-    color: white;
-    background-image: url(../image/banners/hero-home.jpg);
-    background-position: absolute;
-    letter-spacing: normal;
-    position:fixed;
-    margin: auto;
+.banner{
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 1.5rem;
     text-align: center;
-    
-    
-
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative;
 }
 
+.banner h2,
+.banner p,
+.banner .btn {
+    position: relative;
+    z-index: 1;
+}
 
 .btn {
-    border: .125rem soild green;
+    border: .125rem soild #09a38c;
     border-radius: 5rem;
     display: inline-block;
     padding: .35em 2em .45em;
     background-color: transparent;
-    text-align: center;
-    color: green;
+    text-decoration: none;
+    color: #09a38c;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: green;
-    border-color: green;
-    color: fff;
+    background-color: #09a38c;
+    border-color: #09a38c;
+    color:#fff;
+}
 
-
+.hero {
+    background-image: 
+        linear-gradient(to bottom, #00000099, #00000099),
+        url(./image/banners/hero-home.jpg);
 }
 
 .action {
-    width: 100%;
-    color: white;
-    background-image: url(../image/banners/soccer-banner-bw.jpg);
-    background-position: center;
-    background-size: cover;
-    letter-spacing: normal;
-    text-align: center;
-    position:fixed;
+    background-image: url(./image/banners/soccer-banner-bw.jpg);
+    padding: 5rem 1.5rem;
 }
 
-.action button{
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: none;
-    text-align: center;
-    color: white;
+.platform {
+    text-align:center;
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+    line-height: 2rem;
+    margin: 0 auto;
+    max-width: 45em;
+    font-size: 1rem;
+
+
 }
+.platform img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+
+}
+
