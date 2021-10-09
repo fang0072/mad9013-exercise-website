@@ -1,10 +1,53 @@
-html{
+
+
+html {
     background-color: #fff;
     font-family: sans-serif;
+}
+
+.head {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    overflow: auto;
+}
+
+.head_container {
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    overflow: auto;
+    background-color: teal;
+}
+
+.footer_container {
+    width: 100%;
+    float: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width:60em ) {
+    .headContent {
+        border-left: 1px solid #fff;
+        font-size: 100;
+        float: none;
+    }
+    .footer{
+        width: 25%;
+        line-height: 1.2;
+    }
+
 
 }
 
-.banner{
+.banner {
     background-size: cover;
     background-position: center;
     padding: 10rem 1.5rem;
@@ -21,8 +64,8 @@ html{
     z-index: 1;
 }
 
-.btn {
-    border: .125rem soild #09a38c;
+.btn-outline {
+    border: .125rem solid #09a38c;
     border-radius: 5rem;
     display: inline-block;
     padding: .35em 2em .45em;
@@ -38,37 +81,171 @@ html{
     color:#fff;
 }
 
-.hero {
+.banner-hero {
     background-image: 
         linear-gradient(to bottom, #00000099, #00000099),
-        url(./image/banners/hero-home.jpg);
+        url(../image/banners/hero-home.jpg);
+}
+.banner_headline {
+    text-transform: uppercase;
 }
 
-.action {
-    background-image: url(./image/banners/soccer-banner-bw.jpg);
+.banner-action {
+    background-image: 
+        linear-gradient(to bottom, #00000099, #00000099),
+        url(../image/banners/soccer-banner-bw.jpg);
     padding: 5rem 1.5rem;
+}
+
+.btn-white {
+    border: .125rem solid #fff;
+    border-radius: 5rem;
+    display: inline-block;
+    padding: .35em 2em .45em;
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 1.5em;
 }
 
 .platform {
     text-align:center;
-    width: 100%;
-    display: block;
-    padding: 1rem 0;
-    line-height: 2rem;
-    margin: 0 auto;
-    max-width: 45em;
-    font-size: 1rem;
-
-
+    padding: 4.5rem 0;
 }
+
+.container-text {
+    max-width: 45em;
+    width: 100%;
+}
+
 .platform img {
     display: block;
     margin: 0 auto;
     width: 100%;
 }
 
-h2{
-    text-align: center;
-
+h1,
+h2 {
+    font-weight: 400;
 }
+
+h1,
+.heading_1 {
+    text-align: center;
+    font-size: 1.802rem;
+    text-transform: uppercase;
+    color: teal;
+    font-weight: normal;
+}
+h2,
+.heading_2 {
+    font-size: 1.602rem;
+    font-weight: normal;
+    font-weight: 100;
+}
+h3,
+.heading_3 {
+    font-weight: 100;
+    font-size: 1.424rem;
+}
+h4,
+.heading_4 {
+    font-size: 1.266rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+h5,
+.heading_5 {
+    color: #066051;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #ddd;
+}
+
+h6,
+.heading_6,
+.underline {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+.underline { 
+    text-decoration: underline;
+    color: #09a38c;
+}
+
+
+@media only screen and (min-width:38em ) {
+    h1 {
+        font-size: 1.802rem;
+    }
+    h2 {
+        font-size: 1.602rem;
+    }
+    h3 {
+        font-size: 1.424rem;
+    }
+    h4 {
+        font-size: 1.266rem;
+    }
+    h5 {
+        font-size: 1.125rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:60em) {
+    h1 {
+        font-size: 2.488rem;
+    }
+    h2 {
+        font-size: 2.074rem;
+    }
+    h3 {
+        font-size: 1.728rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    h6 {
+        font-size: 1.086rem;
+    }
+}
+
+@media only screen and (min-width:90em) {
+    h1 {
+        font-size: 3.052rem;
+    }
+    h2 {
+        font-size: 2.441rem;
+    }
+    h3 {
+        font-size: 1.953rem;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1.075rem;
+    }
+}
+
+
+
 
