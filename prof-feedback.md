@@ -113,3 +113,17 @@ Total: /5
 </body>
 </html>
 ```
+
+## Week 5 ----------------------
+
+Code Quality: 1/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 2.5/5
+
+Part 1 is incomplete.
+
+- make sure you are applying the correct colours from the assets repository.
+
+Part 2: 
+- the Ubuntu font should be applied to your website
