@@ -1,51 +1,73 @@
-
+@import url('https://fonts.google.com/specimen/Ubuntu');
 
 html {
     background-color: #fff;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.head {
+.header {
     padding: 1rem 0;
     margin: 0 3rem;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.head_container {
-    display: block;
-    width: 25%;
-    float: left;
-    text-align: center;
+
+.header nav {
+    padding: 1rem;
+}
+
+.footer {
+    flex-direction: column;
+    display: flex;
+    align-items:flex-start;
+    margin: 0 3rem;
+    background-color: #196b5b;
+}
+
+.footer .logoimg {
+    max-width:50% ;
+}
+
+
+.footer .links{
+    display: flex;
+    flex: 10 10 50px;
+    background-color: #134428;
     font-size: 1rem;
 }
 
-footer {
-    padding: 1rem 0;
-    margin: 0 3rem;
-    overflow: auto;
-    background-color: teal;
+.logoRow ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-.footer_container {
-    width: 100%;
-    float: none;
-    text-align: center;
-    font-size: 1rem;
-}
 
-@media only screen and (min-width:60em ) {
-    .headContent {
-        border-left: 1px solid #fff;
-        font-size: 100;
-        float: none;
+@media only screen and (min-width:360px ) {
+    .logoRow ul {
+        flex-direction: column;
     }
-    .footer{
-        width: 25%;
-        line-height: 1.2;
+    .footer,
+    .links {
+        width: 100%;
+        align-items: center;
     }
-
-
+    .header .nav {
+        align-items: center;
+    }
 }
+
+@media only screen and (min-width:600px ) {
+    .logoRow ul{
+        flex-wrap: wrap;
+    }
+}
+
+
+
 
 .banner {
     background-size: cover;
