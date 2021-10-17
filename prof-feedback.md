@@ -127,3 +127,16 @@ Part 1 is incomplete.
 
 Part 2: 
 - the Ubuntu font should be applied to your website
+
+
+## Week 6 ----------------------
+
+Code Quality: 0/3
+Design: 0/1
+File Organization & Commits: 1/1
+Total: 1/5
+
+Part 1: Incomplete
+
+Part 2: Incomplete
+
