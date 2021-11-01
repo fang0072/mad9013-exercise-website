@@ -255,9 +255,10 @@ html {
     padding: 0 1.5em;
 }
 
-.platform {
+.platform h2 {
     text-align:center;
-    padding: 4.5rem 0;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
 }
 
 .container-text {
@@ -483,19 +484,20 @@ FAILURE*/
 
 @media only screen and (min-width: 45em) {
     .build1,
-    .build2,
-    .build3,
-    .build4 {
+    .build3 {
         grid-template-areas: 
-            'image'  'text';
+            'image text';
         grid-template-columns: 1fr 2fr;    
     }
-    .build1,
+    
     .build2,
-    .build3,
-    .build4:nth-child(2n) {
+    .build4 {
         grid-template-areas: 
-            'text' 'image';
+            'text image';
         grid-template-columns: 2fr 1fr;      
+    }
+    .build-text {
+        width: 50%;
+        line-height: 1.5em;
     }
 }
