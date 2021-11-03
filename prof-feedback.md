@@ -140,3 +140,17 @@ Part 1: Incomplete
 
 Part 2: Incomplete
 
+## Week 7 ----------------------
+
+Code Quality: 1.5/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 3/5
+
+- Don't forget to update the link in the Platform Tour nav item to link to the Platform Tour page! The logo should also link back to the home page.
+- There are inconsistencies in the look of your navbar on the two pages. They should look identical. Copy and pasting the original code will make this easier.
+- You are missing the `<link>` tag for your Google Font
+- On the Platform Tour page, remove the `h1` from the navbar and make the "Next Level Design at Your Fingertips." heading the `h1`. You need to have a unique `h1` on every page.
+- "The Polished+ Platform" heading should be `h2` and each platform item heading should be `h3`
+- On your containers, use a max-width of a hard value, like `70em` instead of a percentage. This will use the space a bit better and will keep things from getting too large.
+- You should have two equal sized columns at the large screen size. You have a 1/3 and 2/3 sized columns that do not match the screenshot. You then limited the width of the content inside which is miss-aligning things.
