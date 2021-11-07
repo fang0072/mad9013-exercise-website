@@ -154,3 +154,18 @@ Total: 3/5
 - "The Polished+ Platform" heading should be `h2` and each platform item heading should be `h3`
 - On your containers, use a max-width of a hard value, like `70em` instead of a percentage. This will use the space a bit better and will keep things from getting too large.
 - You should have two equal sized columns at the large screen size. You have a 1/3 and 2/3 sized columns that do not match the screenshot. You then limited the width of the content inside which is miss-aligning things.
+
+
+## Week 9 ----------------------
+
+Code Quality: 2.25/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 3.75/5
+
+- Your HTML files should be appropriately named for the content of the page. In this case, it should be named `pricing.html`. Your file names should also be all lowercase letters.
+- Remove the `h2` around the logo in the header as it is not an appropriate heading here. A `strong` tag is a good alternate.
+- Your `caption` is empty. It should be removed.
+- Avoid creating numbered classes like `.tr1`. These are not descriptive enough to describe their purpose. Also, the amount of content and rows could change, which will make the classes unusable.
+- The Premium column should be highlighted with a different text, button, and background color!
+- Use a container! The table should be contained.
