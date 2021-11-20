@@ -1,12 +1,29 @@
+:root {
+    --color-primary: #057E6C;
+    --color-primary-light: #09a38c;
+    --color-primary-dark: #196b5b;
+
+    --color-secondary: #bbb;
+    --color-secondary-light: #888;
+    --color-secondary-dark: #777;
+
+    --font-primary: 'Ubuntu', sans-serif;
+}
+
+
 
 
 /*main page html begin*/
 
 html {
     background-color: #fff;
-    font-family: 'Ubuntu', serif;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 .header {
     padding: 0.75rem 0;
@@ -21,11 +38,34 @@ html {
 
 .logo img,
 .logo1 img {
-<<<<<<< HEAD
-    max-width: 5em;
-=======
     max-width: 9em;
->>>>>>> 6b6462d (sign-up exercise)
+}
+
+.skipLinks {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skipLinks a {
+    position: fixed;
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    background-color: #134428;
+    color: #fff;
+    font-size: normal;
+    font-weight: 400;
+    top: -1000rem;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+
+
+.skipLinks a:focus {
+    top: 0;
 }
 
 .nav ul,
@@ -43,8 +83,14 @@ html {
 .nav a,
 .nav1 a {
     text-decoration: none;
-    color: #09a38c;
+    color: var(--color-primary);
 }
+
+.nav a:focus,
+.nav1 a:focus,
+.sub-footer a:focus {
+    color: darkblue;
+} 
 
 .logo_1 {
     display: inline-block;
@@ -114,6 +160,17 @@ html {
     max-width: 100%;
 }
 
+.top {
+    color: #fff;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    padding: .5em;
+    right: 5rem;
+    border-radius: .75em .75em 0 0;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
@@ -141,12 +198,9 @@ html {
     .header .logo,
     .header1 .logo1 {
         padding-right: 1.5rem;
-<<<<<<< HEAD
     }
     .header img {
         padding-left: none;
-=======
->>>>>>> 6b6462d (sign-up exercise)
     }
     .header img {
         padding-left: none;
@@ -154,7 +208,7 @@ html {
 
     .logo img,
     .logo1 img {
-    max-width: 5em;
+    max-width: 8em;
 }
 
     .header ul,
@@ -186,6 +240,10 @@ html {
     .logoRow ul {
         max-width: 100%;
         justify-content: space-evenly;
+    }
+
+    .form {
+        max-width: 40rem;
     }
     
     .form .container-grid  {
@@ -226,19 +284,19 @@ html {
 }
 
 .btn-outline {
-    border: .125rem solid #09a38c;
+    border: .125rem solid var(--color-primary);
     border-radius: 5rem;
     display: inline-block;
     padding: .35em 2em .45em;
     background-color: transparent;
     text-decoration: none;
-    color: #09a38c;
+    color: var(--color-primary);
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #09a38c;
-    border-color: #09a38c;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
     color:#fff;
 }
 
@@ -538,6 +596,7 @@ FAILURE*/
     color: darkgreen;
 }
 
+
 .afford p {
     font-size: 2.2rem;
 }
@@ -553,19 +612,11 @@ thead {
     font-size: 1.5rem;
 }
 
-<<<<<<< HEAD
-.tbody .tr1 th {
-    padding: 4rem;
-}
-
-.tbody .tr1 td {
-=======
 .tbody .trPrice th {
     padding: 4rem;
 }
 
 .tbody .trPrice td {
->>>>>>> 6b6462d (sign-up exercise)
     padding: none;
 }
 
@@ -575,11 +626,7 @@ thead {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-.tbody .tr8 th {
-=======
 .tbody .trSignup th {
->>>>>>> 6b6462d (sign-up exercise)
     padding-bottom: none;
 }
 
@@ -587,20 +634,12 @@ thead {
     text-align: center;
 }
 
-<<<<<<< HEAD
-.tbody .tr1 td {
-=======
 .tbody .trPrice td {
->>>>>>> 6b6462d (sign-up exercise)
     font-weight: bold;
     font-size: 4rem;
 }
 
-<<<<<<< HEAD
-.tbody .tr1 td sup {
-=======
 .tbody .trPrice td sup {
->>>>>>> 6b6462d (sign-up exercise)
     font-size: 2rem;
 }
 
@@ -612,32 +651,7 @@ thead {
     position: relative;
 }
 
-.tr-text,
-<<<<<<< HEAD
-.tr2,
-.tr3,
-.tr4,
-.tr5,
-.tr6 {
-    border-bottom: 1px solid #ccc;
-}
 
-thead th :empty{
-    background-color: #fff;
-}
-
-.tbody tr :hover {
-    background-color: #DEFDC3;
-}
-
-.tbody tr :hover::after,
-.tbody td :hover::after {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100000px;
-}
-=======
 tr {
     border-bottom: 1px solid #ccc;
 }
@@ -650,7 +664,7 @@ tr {
 
 .tbody .trUnder {
     background-color: #DEFDC3;
-    color: #09a38c;
+    color: var(--color-primary);
 }
 
 
@@ -658,11 +672,18 @@ tr {
 
 /*sign-up begin*/
 
+
+
 .mainSign {
     padding: 0rem;
     background-image: 
         linear-gradient(to bottom, #00000099, #00000099),
         url(../image/banners/hockey-goalie.jpg);    
+}
+
+.form .trPrice .bTH,
+.form .tr-text .bTH {
+    color: #fff;
 }
 
 fieldset h2 {
@@ -672,23 +693,35 @@ fieldset h2 {
 .form {
     background: #fff;
     padding: 0rem;
-    max-width: 35rem;
+    max-width: 25rem;
     border-radius: 40px;
     box-shadow:0 4px 10px 4px ;
-    margin: 1rem 3rem;
+    margin: 0 auto;
+    display: grid;
 }
 
 fieldset {
     display: contents;
 }
 
+
+
 .form .container {
     display: grid;
     grid-template-columns: 1fr;
 }
 
+.form .container .screen-reader-text {
+    width: .1px;
+    height: .1px;
+    overflow: hidden;
+    position: absolute;
+}
 
-
+input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -698,5 +731,3 @@ input[type=text], input[type=password] {
     border: 2px solid #ddd;
     border-radius: 30px;
 }
-
->>>>>>> 6b6462d (sign-up exercise)

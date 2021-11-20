@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
 <body>
+    <ul class="skipLinks">
+        <li><a href="#nav">to navigation</a></li>
+        <li><a href="#main">to main</a></li>
+        <li><a href="#footer">to footer</a></li>
+    </ul>
     <header class="header">
         <div class="container">
             <strong class="logo1">
@@ -16,7 +21,7 @@
                     <img src="./image/logos/logo-polished-color.svg" alt= "polished">
                 </a>
             </strong>
-            <nav class="nav1" role="navigation">
+            <nav class="nav1" id="nav" role="navigation">
                 <ul>
                     <li> <a href="platform-tour.html">Platform Tour</a> </li>
                     <li> <a href="Pricing.html">Pricing</a> </li>
@@ -26,7 +31,7 @@
             </nav>
         </div>    
     </header>
-    <main role="main" class="main">
+    <main role="main" class="main" id="main">
         <div class="afford">
             <h1>
                 Affordable Pricing for All.
@@ -38,7 +43,7 @@
                 <table>
                     <thead>
                         <tr class="trBasic">
-                            <th></th>
+                            <th> </th>
                             <th>Basic</th>
                             <th class="trUnder">Premium</th>
                             <th>Ultra</th>
@@ -51,7 +56,7 @@
                             <td><sup>$</sup>30</td>
                         </tr>
                         <tr class="tr-text">
-                            <th></th>
+                            <th> </th>
                             <td>per month</td>
                             <td class="trUnder">per month</td>
                             <td>per month</td>
@@ -104,7 +109,7 @@
             </div>    
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <a class="logo_1" href="index.html"> 
                 <img src="./image/logos/logo-polished-white.svg" alt="polished logo white"/>
@@ -114,6 +119,7 @@
         <div class="sub-footer">
             <div class="container">
                 <small>©2021 Algonquin College</small>
+                <a class="top" href="#main">to top</a> 
                 <ul>
                     <li> <a href="#">Privacy Policy</a> </li>
                     <li> <a href="#">Terms of Service</a> </li>
