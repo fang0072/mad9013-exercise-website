@@ -21,7 +21,11 @@ html {
 
 .logo img,
 .logo1 img {
+<<<<<<< HEAD
     max-width: 5em;
+=======
+    max-width: 9em;
+>>>>>>> 6b6462d (sign-up exercise)
 }
 
 .nav ul,
@@ -113,7 +117,7 @@ html {
 
 
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 38em) {
     .header,
     .header1,
     .footer {
@@ -137,10 +141,21 @@ html {
     .header .logo,
     .header1 .logo1 {
         padding-right: 1.5rem;
+<<<<<<< HEAD
+    }
+    .header img {
+        padding-left: none;
+=======
+>>>>>>> 6b6462d (sign-up exercise)
     }
     .header img {
         padding-left: none;
     }
+
+    .logo img,
+    .logo1 img {
+    max-width: 5em;
+}
 
     .header ul,
     .header1 ul {
@@ -171,6 +186,11 @@ html {
     .logoRow ul {
         max-width: 100%;
         justify-content: space-evenly;
+    }
+    
+    .form .container-grid  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -440,7 +460,6 @@ FAILURE*/
 .build {
     gap: 1.5rem;
     padding-top: 1.5rem 0;
-    
     align-items: center;
 }
 
@@ -534,11 +553,19 @@ thead {
     font-size: 1.5rem;
 }
 
+<<<<<<< HEAD
 .tbody .tr1 th {
     padding: 4rem;
 }
 
 .tbody .tr1 td {
+=======
+.tbody .trPrice th {
+    padding: 4rem;
+}
+
+.tbody .trPrice td {
+>>>>>>> 6b6462d (sign-up exercise)
     padding: none;
 }
 
@@ -548,7 +575,11 @@ thead {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .tbody .tr8 th {
+=======
+.tbody .trSignup th {
+>>>>>>> 6b6462d (sign-up exercise)
     padding-bottom: none;
 }
 
@@ -556,12 +587,20 @@ thead {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .tbody .tr1 td {
+=======
+.tbody .trPrice td {
+>>>>>>> 6b6462d (sign-up exercise)
     font-weight: bold;
     font-size: 4rem;
 }
 
+<<<<<<< HEAD
 .tbody .tr1 td sup {
+=======
+.tbody .trPrice td sup {
+>>>>>>> 6b6462d (sign-up exercise)
     font-size: 2rem;
 }
 
@@ -574,6 +613,7 @@ thead {
 }
 
 .tr-text,
+<<<<<<< HEAD
 .tr2,
 .tr3,
 .tr4,
@@ -597,3 +637,66 @@ thead th :empty{
     width: 100%;
     height: 100000px;
 }
+=======
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.trBasic,
+.trSignup,
+.trPrice {
+    border-bottom: none;
+}
+
+.tbody .trUnder {
+    background-color: #DEFDC3;
+    color: #09a38c;
+}
+
+
+
+
+/*sign-up begin*/
+
+.mainSign {
+    padding: 0rem;
+    background-image: 
+        linear-gradient(to bottom, #00000099, #00000099),
+        url(../image/banners/hockey-goalie.jpg);    
+}
+
+fieldset h2 {
+    color: #09a38c;
+}
+
+.form {
+    background: #fff;
+    padding: 0rem;
+    max-width: 35rem;
+    border-radius: 40px;
+    box-shadow:0 4px 10px 4px ;
+    margin: 1rem 3rem;
+}
+
+fieldset {
+    display: contents;
+}
+
+.form .container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+}
+
+>>>>>>> 6b6462d (sign-up exercise)

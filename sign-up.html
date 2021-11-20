@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href='./css/main.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <strong class="logo1">
+                <a href="index.html" class="logo_1">
+                    <img src="./image/logos/logo-polished-color.svg" alt= "polished">
+                </a>
+            </strong>
+            <nav class="nav1" role="navigation">
+                <ul>
+                    <li> <a href="platform-tour.html">Platform Tour</a> </li>
+                    <li> <a href="Pricing.html">Pricing</a> </li>
+                    <li class="sign"> <a href="./sign-up.html">Sign In</a> </li>
+                    <a class="btn btn-outline" href="./sign-up.html">Sign up</a>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <main class="mainSign" role="main">
+        <form class="form">
+            <fieldset>
+                <div class="container">
+                    <h2>Sign Up</h2>
+                    <div class="container-grid">
+                        <label for="first-name"></label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="container-grid">    
+                        <label for="last-name"></label>
+                        <input type="text" id="last-name" placeholder="last-name" name="Last Name" >
+                    </div>    
+                    <label for="email"></label>
+                    <input type="text" id="email" placeholder="Email" name="email">
+
+                    <label for="psw"></label>
+                    <input type="password" placeholder="Enter Password" name="psw">
+
+                    <label for="psw-repeat"></label>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat">
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="agree" style="margin-bottom:15px"> 
+                    </label>
+                    <p>I agree to the <a href="#" >Terms of Services</a> & <a href="#"> Privacy Policy</a>.</p>
+                        <button type="submit" class="btn btn-outline">Sign Up</button>
+                    <p>Already have an account? <a href="sign-up.html">Sign In</a> </p>    
+                </div>
+            </fieldset>    
+        </form>    
+    </main>
+</body>
+<footer class="footer">
+    <div class="container">
+        <a class="logo_1" href="index.html"> 
+            <img src="./image/logos/logo-polished-white.svg" alt="polished logo white"/>
+        </a>
+        <a class="btn btn-white" href="./sign-up.html">Sign up</a>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <small>©2021 Algonquin College</small>
+            <ul>
+                <li> <a href="#">Privacy Policy</a> </li>
+                <li> <a href="#">Terms of Service</a> </li>
+            </ul>
+        </div>    
+    </div>
+</footer>  
+</html>
