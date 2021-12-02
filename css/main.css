@@ -42,30 +42,27 @@ html {
 }
 
 .skipLinks {
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    padding: 4px;
+    left: 50%;
+    transform: translateY(-150%);
     list-style-type: none;
+    background-color: var(--color-secondary);
+    transition: transform 0.2s;
 }
 
 .skipLinks a {
-    position: fixed;
     display: inline-block;
-    padding: 1rem;
-    width: 100%;
-    text-align: left;
-    background-color: #134428;
-    color: #fff;
-    font-size: normal;
-    font-weight: 400;
-    top: -1000rem;
+    color: #031A8C;
+    font-weight: 500;
     text-decoration: none;
     z-index: 1000;
 }
 
 
 
-.skipLinks a:focus {
-    top: 0;
+.skipLinks :focus {
+    transform: translateY(0%);
 }
 
 .nav ul,
@@ -84,6 +81,7 @@ html {
 .nav1 a {
     text-decoration: none;
     color: var(--color-primary);
+    transform: translateY(-2px);
 }
 
 .nav a:focus,
@@ -250,6 +248,12 @@ html {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    footer .svgContent {
+        position: relative;
+        width: 100%;
+        margin-left: 150px;
+    }
 }
 
 @media only screen and (min-width: 75em) {
@@ -262,10 +266,6 @@ html {
     }
 }
 
-
-
-
-
 .banner {
     background-size: cover;
     background-position: center;
@@ -276,11 +276,23 @@ html {
     position: relative;
 }
 
-.banner h2,
+.banner h1,
 .banner p,
-.banner .btn {
+.banner .btn,
+.banner-action h2 {
     position: relative;
     z-index: 1;
+    transform: translateX(-20rem);
+    opacity: 0;
+    animation: slideIntoSection 550ms .7s forwards;
+}
+
+.banner p {
+    animation-delay: 1s;
+}
+
+.banner .btn {
+    animation-delay: 1.25s;
 }
 
 .btn-outline {
@@ -291,12 +303,27 @@ html {
     background-color: transparent;
     text-decoration: none;
     color: var(--color-primary);
+    cursor: pointer;
+}
+
+@keyframes slideIntoSection {
+    from {
+        transform: translateX(-20rem);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn .btn-outline:hover,
+.btn .bth-outline:focus { 
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+    transform: translateY(-3px);
     color:#fff;
 }
 
@@ -326,7 +353,9 @@ html {
     background-color: transparent;
     text-decoration: none;
     color: #fff;
-
+    transition: 
+        color 0.2s
+        background-color 0.2s;
 }
 
 .container {
@@ -675,7 +704,7 @@ tr {
 
 
 .mainSign {
-    padding: 0rem;
+    padding: 1rem;
     background-image: 
         linear-gradient(to bottom, #00000099, #00000099),
         url(../image/banners/hockey-goalie.jpg);    
@@ -695,7 +724,7 @@ fieldset h2 {
     padding: 0rem;
     max-width: 25rem;
     border-radius: 40px;
-    box-shadow:0 4px 10px 4px ;
+    box-shadow:0 4px 10px 4px rgba(92, 99, 105, .2);
     margin: 0 auto;
     display: grid;
 }
@@ -730,4 +759,28 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 2px solid #ddd;
     border-radius: 30px;
+}
+
+.svgContent svg {
+    width: auto;
+    max-width: 2.5rem;
+    margin: 1rem;
+}
+
+svg .svgContent {
+    display: flex;
+}
+
+svg path {
+    fill: #fff;
+        stroke: #fff;
+        stroke-width: 1;
+}
+
+svg path:focus,
+svg path:hover {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 1;
+    transition-delay: 150ms;
 }
