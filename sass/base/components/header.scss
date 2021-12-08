@@ -1,0 +1,92 @@
+@import '../modules/colors.scss';
+$medium: 38em;
+.header,
+.header1 {
+    padding: 0.75rem 0;
+    text-align: center;
+    overflow: hidden;
+    .logo,
+    .logo1 {
+        margin-bottom: 0.75rem;
+        img {
+            max-width: 9em;
+        }
+        .logo_1 {
+            display: inline-block;
+            max-width: 10rem;
+            width: 100%;
+        }
+    }
+    .nav,
+    .nav1 {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0.75rem;
+        }
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            transform: translateY(-2px);
+            &:focus {
+                color: darkblue;
+            }
+        }
+    }
+}
+    @media only screen and (min-width: $medium) {
+        .header,
+        .header1 {
+            text-align: left;
+            .container,
+            .logo1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.5rem;
+                img {
+                    max-width: 8em;
+                    padding-left: none;
+                }
+            }
+            .nav,
+            .nav1 {
+                flex-grow: 1;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    li {
+                        margin: 0;
+                    }
+                    .sign {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+
+.skipLinks {
+    position: absolute;
+    padding: 4px;
+    left: 50%;
+    transform: translateY(-150%);
+    list-style-type: none;
+    background-color: $color-secondary;
+    transition: transform 0.2s;
+    &:focus {
+        transform: translateY(10%);
+    }
+    a {
+        display: inline-block;
+        color: #031A8C;
+        font-weight: 500;
+        text-decoration: none;
+        z-index: 1000;
+    }
+}

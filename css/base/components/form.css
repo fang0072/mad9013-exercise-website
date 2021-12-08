@@ -1,0 +1,124 @@
+.afford {
+  text-align: center;
+  padding: 3rem;
+  width: auto;
+}
+.afford h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: darkgreen;
+}
+.afford p {
+  font-size: 2.2rem;
+}
+
+.form-group {
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+  gap: 0;
+}
+.form-group thead {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.form-group .tbody {
+  position: relative;
+}
+.form-group .tbody th {
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.form-group .tbody .tr-text .bTH {
+  color: #fff;
+}
+.form-group .tbody .tr-text .trPrice {
+  border-bottom: none;
+}
+.form-group .tbody .tr-text .trPrice .bTH {
+  color: #fff;
+}
+.form-group .tbody .tr-text .trPrice th {
+  padding: 4rem;
+}
+.form-group .tbody .tr-text .trPrice td {
+  padding: none;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.form-group .tbody .tr-text .trPrice td sup {
+  font-size: 2rem;
+}
+.form-group .tbody .tr-text .trSignup {
+  border-bottom: none;
+}
+.form-group .tbody .tr-text .trSignup th {
+  padding-bottom: none;
+}
+.form-group .tbody .tr-text td {
+  text-align: center;
+}
+.form-group .tbody tr:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+.form-group .tbody .tr-text th {
+  padding: none;
+}
+.form-group .tbody .trBasic {
+  border-bottom: none;
+}
+.form-group .tbody .trUnder {
+  background-color: #DEFDC3;
+  color: #057E6C;
+}
+
+.mainSign {
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hockey-goalie.jpg);
+}
+.mainSign .form {
+  background: #fff;
+  padding: 0rem;
+  max-width: 25rem;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px 4px rgba(92, 99, 105, 0.2);
+  margin: 0 auto;
+  display: grid;
+}
+.mainSign .form .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.mainSign .form .container .screen-reader-text {
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+  position: absolute;
+}
+.mainSign .form .container input[type=text], .mainSign .form .container input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+}
+.mainSign .form .container input[type=text]:focus, .mainSign .form .container input[type=password]:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}
+.mainSign .form {
+  max-width: 40rem;
+}
+@media only screen and (min-width: 38em) {
+  .mainSign .form {
+    max-width: 40rem;
+  }
+  .mainSign .form .container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,133 @@
+@import url(../);
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #057E6C;
+}
+.banner .banner-hero {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-home.jpg);
+}
+.banner .banner-action {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/soccer-banner-bw.jpg);
+  padding: 5rem 1.5rem;
+}
+.banner .banner-platform {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-platform.jpg);
+  margin-bottom: 5rem;
+}
+.banner h1,
+.banner p,
+.banner .btn,
+.banner h2 {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-20rem);
+  opacity: 0;
+  animation: slideIntoSection 550ms 0.7s forwards;
+}
+@keyframes slideIntoSection {
+  from {
+    transform: translateX(-20rem);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.banner p {
+  animation-delay: 1s;
+}
+.banner .btn {
+  animation-delay: 1.25s;
+}
+
+.platform .container {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.platform .container .container-text {
+  max-width: 100%;
+  width: 70%;
+  line-height: 1.3rem;
+}
+.platform .container .container-text h2 {
+  text-align: center;
+  padding: 2.5rem 0;
+  text-transform: uppercase;
+}
+.platform .container img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.build {
+  gap: 1.5rem;
+  padding-top: 1.5rem 0;
+  align-items: center;
+}
+.build h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.8em;
+  margin-bottom: 3rem;
+  color: #000;
+  text-align: center;
+}
+.build h2 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.build img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 1rem;
+}
+.build .build1,
+.build .build2,
+.build .build3,
+.build .build4 {
+  margin: 1.5rem auto;
+  padding: 0 1.5em;
+  max-width: 100%;
+  width: 70%;
+  display: grid;
+  grid-template-areas: "text" "image";
+}
+.build .build1 .build-text,
+.build .build2 .build-text,
+.build .build3 .build-text,
+.build .build4 .build-text {
+  grid-area: text;
+}
+.build .build1 .build-img,
+.build .build2 .build-img,
+.build .build3 .build-img,
+.build .build4 .build-img {
+  grid-area: image;
+}
+@media only screen and (min-width: 38em) {
+  .build .build1,
+.build .build3 {
+    grid-template-areas: "image text";
+    grid-template-columns: 1fr 2fr;
+  }
+  .build .build2,
+.build .build4 {
+    grid-template-areas: "text image";
+    grid-template-columns: 2fr 1fr;
+  }
+  .build .build-text {
+    width: 50%;
+    line-height: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=body.css.map */

@@ -1,0 +1,147 @@
+@import '../modules/colors.scss';
+@import url(../);
+
+$medium: 38em;
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $color-primary;
+    .banner-hero {
+        background-image: 
+            linear-gradient(to bottom, #00000099, #00000099),
+            url(../image/banners/hero-home.jpg);
+    }        
+    .banner-action {
+        background-image: 
+            linear-gradient(to bottom, #00000099, #00000099),
+            url(../image/banners/soccer-banner-bw.jpg);
+        padding: 5rem 1.5rem;
+    }
+    .banner-platform {
+        background-image: 
+            linear-gradient(to bottom, #00000099, #00000099),
+            url(../image/banners/hero-platform.jpg);
+        margin-bottom: 5rem;  
+    }
+    h1,
+    p,
+    .btn,
+    h2 {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-20rem);
+        opacity: 0;
+            animation: slideIntoSection 550ms .7s forwards;
+        }
+    @keyframes slideIntoSection {
+        from {
+            transform: translateX(-20rem);
+            opacity: 0;
+        }
+        to {
+            transform: none;
+            opacity: 1;
+        }
+}
+    p {
+        animation-delay: 1s;
+    }
+
+    .btn {
+        animation-delay: 1.25s;
+    }
+}
+.platform {
+    .container {
+        width: 100%;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 0 1.5em;
+        .container-text {
+            max-width: 100%;
+            width: 70%;
+            line-height: 1.3rem;
+            h2 {
+                text-align:center;
+                padding: 2.5rem 0;
+                text-transform: uppercase;
+            }
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}
+$medium: 38em;
+$large: 60em;
+
+.build {
+    gap: 1.5rem;
+    padding-top: 1.5rem 0;
+    align-items: center;
+    h1 {
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 1.8em;
+        margin-bottom: 3rem;
+        color: $color-black;
+        text-align: center;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .build1,
+    .build2,
+    .build3,
+    .build4 {
+        margin: 1.5rem auto;
+        padding: 0 1.5em;
+        max-width: 100%;
+        width: 70%;
+        display: grid;
+        grid-template-areas: 
+        'text'
+        'image';
+        .build-text {
+            grid-area: text;
+        }
+        .build-img {
+            grid-area: image;
+        }
+    }
+    @media only screen and (min-width: $medium) {
+        .build1,
+        .build3 {
+            grid-template-areas: 
+                'image text';
+            grid-template-columns: 1fr 2fr;    
+        }
+        .build2,
+        .build4 {
+            grid-template-areas: 
+                'text image';
+            grid-template-columns: 2fr 1fr;      
+        }
+        .build-text {
+            width: 50%;
+            line-height: 1.5em;
+        }
+    }
+}
+
+
+
+

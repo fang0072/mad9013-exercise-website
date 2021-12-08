@@ -1,0 +1,87 @@
+@import '../modules/colors';
+$medium: 38em;
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: $color-primary;
+    .logo_1 {
+        display: block;
+        margin-bottom: 0.75rem;
+        margin: 0 auto;
+    }
+    a {
+        color: #fff;
+    }
+    img {
+        max-width: 10em;
+        margin-bottom: 1.25rem;
+    }
+    .container {
+        padding: 1.5rem;
+        .logo_1 {
+            display: inline-block;
+            max-width: 10rem;
+            width: 100%;
+        }
+        .svgContent {
+            display: flex;
+            svg {
+                width: auto;
+                max-width: 2.5rem;
+                margin: 1rem;
+                path {
+                    fill: #fff;
+                        stroke: #fff;
+                        stroke-width: 1;
+                    &:focus,
+                    &:hover {
+                        fill: #000;
+                        stroke: #000;
+                        stroke-width: 1;
+                        transition-delay: 150ms;
+                    }
+                }
+            }
+        }
+    }
+    
+    .sub-footer {
+        background-color: $color-primary-dark;
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: smaller;
+            list-style-type: none;
+        }
+        li {
+            display: inline-block;
+        }
+        .top {
+            color: #fff;
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            padding: .5em;
+            right: 5rem;
+            border-radius: .75em .75em 0 0;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
+@media only screen and (min-width: $medium) {
+    .footer {
+        text-align: left;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            .svgContent {
+                position: relative;
+                width: 100%;
+                margin-left: 150px;
+            }
+        }
+    }
+}

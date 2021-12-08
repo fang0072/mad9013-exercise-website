@@ -1,0 +1,46 @@
+@import 'colors';
+
+$radius: 5rem;
+        .btn-outline {
+            border: .125rem solid $color-primary;
+            border-radius: $radius;
+            display: inline-block;
+            padding: .35em 2em .45em;
+            background-color: transparent;
+            text-decoration: none;
+            box-shadow: $shadow;
+            color: $color-primary;
+            cursor: pointer;
+            &:hover,
+            &:focus { 
+            background-color: $color-primary-dark;
+            border-color: $color-primary;
+            transform: translateY(-4px);
+            color:$white;
+            }
+        }
+        
+        .btn-white {
+            border: .125rem solid $white;
+            border-radius: $radius;
+            display: inline-block;
+            padding: .35em 2em .45em;
+            background-color: transparent;
+            text-decoration: none;
+            color: $white;
+                transition: color 0.2s
+                background-color 0.2s;
+            &:hover,
+            &:focus { 
+            background-color: $color-primary-dark;
+            border-color: $color-primary;
+            transform: translateY(-4px);
+            color:$white;
+            }    
+        } 
+        
+    
+    
+    
+
+

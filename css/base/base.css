@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url(../);
 .btn-outline {
   border: 0.125rem solid #057E6C;
@@ -496,8 +495,4 @@ footer .sub-footer .top {
   }
 }
 
-html {
-  font-family: "Ubuntu", sans-serif;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=base.css.map */

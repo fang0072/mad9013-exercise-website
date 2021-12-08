@@ -1,0 +1,130 @@
+@import '../modules/colors.scss';
+$medium: 38em;
+.afford {
+    text-align: center;
+    padding: 3rem;
+    width: auto;
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: $color-primary-dark;
+    }
+    p {
+    font-size: 2.2rem;
+    }
+}    
+    .form-group {
+        border-collapse: collapse;
+        overflow: hidden;
+        width: 100%;
+        gap: 0;
+        thead {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .tbody {
+            position: relative;
+            th {
+                padding: 2rem;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            .tr-text {
+            .bTH {
+                color: $white;
+            }
+            .trPrice {
+                border-bottom: none;
+                .bTH {
+                    color: $white;
+                }
+                th {
+                    padding: 4rem;
+                }
+                td {
+                    padding: none;
+                    font-weight: bold;
+                    font-size: 4rem;
+                    sup {
+                        font-size: 2rem;
+                    }
+                }
+            } 
+            .trSignup {
+                border-bottom: none;
+                th {
+                    padding-bottom: none;
+                }    
+            }
+            td {
+                text-align: center;
+            }
+        }
+        tr:nth-child(2){
+            border-bottom: 1px solid #ccc
+        }
+        
+        .tr-text th {
+            padding: none;
+        }
+        .trBasic {
+        border-bottom: none;
+        }
+        .trUnder {
+            background-color: #DEFDC3;
+            color: $color-primary;
+        }
+    }
+}
+    
+
+.mainSign {
+    padding: 1rem;
+    background-image: 
+        linear-gradient(to bottom, #00000099, #00000099),
+        url(../image/banners/hockey-goalie.jpg); 
+    .form {
+        background: $white;
+        padding: 0rem;
+        max-width: 25rem;
+        border-radius: 40px;
+        box-shadow:0 4px 10px 4px rgba(92, 99, 105, .2);
+        margin: 0 auto;
+        display: grid;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            .screen-reader-text {
+                width: .1px;
+                height: .1px;
+                overflow: hidden;
+                position: absolute;
+            }
+            input[type=text], input[type=password] {
+                width: 80%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: 2px solid #ddd;
+                border-radius: 30px;
+                &:focus {
+                    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+                    border: 1px solid rgba(81, 203, 238, 1);
+                }
+            }
+        }
+    }.form {
+        max-width: 40rem;
+    }
+    
+    @media only screen and (min-width: $medium) {
+        .form {
+            max-width: 40rem;
+            .container-grid  {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+    

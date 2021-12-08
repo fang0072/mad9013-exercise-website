@@ -42,102 +42,41 @@
   overflow: hidden;
 }
 .header .logo,
-.header .logo1,
-.header1 .logo,
-.header1 .logo1 {
+.header1 .logo {
   margin-bottom: 0.75rem;
 }
 .header .logo img,
-.header .logo1 img,
-.header1 .logo img,
-.header1 .logo1 img {
+.header1 .logo img {
   max-width: 9em;
 }
-.header .logo .logo_1,
-.header .logo1 .logo_1,
-.header1 .logo .logo_1,
-.header1 .logo1 .logo_1 {
+.header .logo_1,
+.header1 .logo_1 {
   display: inline-block;
   max-width: 10rem;
   width: 100%;
 }
-.header .nav ul,
-.header .nav1 ul,
-.header1 .nav ul,
-.header1 .nav1 ul {
+
+.nav ul,
+.nav1 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.header .nav li,
-.header .nav1 li,
-.header1 .nav li,
-.header1 .nav1 li {
+.nav li,
+.nav1 li {
   margin-bottom: 0.75rem;
 }
-.header .nav a,
-.header .nav1 a,
-.header1 .nav a,
-.header1 .nav1 a {
+.nav a,
+.nav1 a {
   text-decoration: none;
   color: #057E6C;
   transform: translateY(-2px);
 }
-.header .nav a:focus,
-.header .nav1 a:focus,
-.header1 .nav a:focus,
-.header1 .nav1 a:focus {
+.nav a:focus,
+.nav1 a:focus {
   color: darkblue;
 }
 
-@media only screen and (min-width: 38em) {
-  .header,
-.header1 {
-    text-align: left;
-  }
-  .header .container,
-.header .logo1,
-.header1 .container,
-.header1 .logo1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-  .header .container img,
-.header .logo1 img,
-.header1 .container img,
-.header1 .logo1 img {
-    max-width: 8em;
-    padding-left: none;
-  }
-  .header .nav,
-.header .nav1,
-.header1 .nav,
-.header1 .nav1 {
-    flex-grow: 1;
-  }
-  .header .nav ul,
-.header .nav1 ul,
-.header1 .nav ul,
-.header1 .nav1 ul {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .header .nav ul li,
-.header .nav1 ul li,
-.header1 .nav ul li,
-.header1 .nav1 ul li {
-    margin: 0;
-  }
-  .header .nav ul .sign,
-.header .nav1 ul .sign,
-.header1 .nav ul .sign,
-.header1 .nav1 ul .sign {
-    margin-left: auto;
-  }
-}
 .skipLinks {
   position: absolute;
   padding: 4px;
@@ -148,7 +87,7 @@
   transition: transform 0.2s;
 }
 .skipLinks:focus {
-  transform: translateY(10%);
+  transform: translateY(0%);
 }
 .skipLinks a {
   display: inline-block;
@@ -226,22 +165,6 @@ footer .sub-footer .top {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 38em) {
-  .footer {
-    text-align: left;
-  }
-  .footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-  .footer .container .svgContent {
-    position: relative;
-    width: 100%;
-    margin-left: 150px;
-  }
-}
 .afford {
   text-align: center;
   padding: 3rem;
@@ -260,7 +183,6 @@ footer .sub-footer .top {
   border-collapse: collapse;
   overflow: hidden;
   width: 100%;
-  gap: 0;
 }
 .form-group thead {
   font-weight: bold;
@@ -274,95 +196,41 @@ footer .sub-footer .top {
   font-size: 1.25rem;
   font-weight: bold;
 }
-.form-group .tbody .tr-text .bTH {
-  color: #fff;
-}
-.form-group .tbody .tr-text .trPrice {
+.form-group .tbody .trPrice {
   border-bottom: none;
 }
-.form-group .tbody .tr-text .trPrice .bTH {
-  color: #fff;
-}
-.form-group .tbody .tr-text .trPrice th {
+.form-group .tbody .trPrice th {
   padding: 4rem;
 }
-.form-group .tbody .tr-text .trPrice td {
+.form-group .tbody .trPrice td {
   padding: none;
   font-weight: bold;
   font-size: 4rem;
 }
-.form-group .tbody .tr-text .trPrice td sup {
+.form-group .tbody .trPrice td sup {
   font-size: 2rem;
 }
-.form-group .tbody .tr-text .trSignup {
+.form-group .tbody .trSignup {
   border-bottom: none;
 }
-.form-group .tbody .tr-text .trSignup th {
+.form-group .tbody .trSignup th {
   padding-bottom: none;
 }
-.form-group .tbody .tr-text td {
+.form-group .tbody td {
   text-align: center;
 }
-.form-group .tbody tr:nth-child(2) {
+.form-group tr:nth-child(2) {
   border-bottom: 1px solid #ccc;
 }
-.form-group .tbody .tr-text th {
+.form-group .tr-text th {
   padding: none;
 }
-.form-group .tbody .trBasic {
+.form-group .trBasic {
   border-bottom: none;
 }
-.form-group .tbody .trUnder {
+.form-group .trUnder {
   background-color: #DEFDC3;
   color: #057E6C;
-}
-
-.mainSign {
-  padding: 1rem;
-  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hockey-goalie.jpg);
-}
-.mainSign .form {
-  background: #fff;
-  padding: 0rem;
-  max-width: 25rem;
-  border-radius: 40px;
-  box-shadow: 0 4px 10px 4px rgba(92, 99, 105, 0.2);
-  margin: 0 auto;
-  display: grid;
-}
-.mainSign .form .container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.mainSign .form .container .screen-reader-text {
-  width: 0.1px;
-  height: 0.1px;
-  overflow: hidden;
-  position: absolute;
-}
-.mainSign .form .container input[type=text], .mainSign .form .container input[type=password] {
-  width: 80%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: 2px solid #ddd;
-  border-radius: 30px;
-}
-.mainSign .form .container input[type=text]:focus, .mainSign .form .container input[type=password]:focus {
-  box-shadow: 0 0 5px #51cbee;
-  border: 1px solid #51cbee;
-}
-.mainSign .form {
-  max-width: 40rem;
-}
-@media only screen and (min-width: 38em) {
-  .mainSign .form {
-    max-width: 40rem;
-  }
-  .mainSign .form .container-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .banner {
@@ -372,17 +240,6 @@ footer .sub-footer .top {
   text-align: center;
   font-size: 1.5rem;
   color: #057E6C;
-}
-.banner .banner-hero {
-  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-home.jpg);
-}
-.banner .banner-action {
-  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/soccer-banner-bw.jpg);
-  padding: 5rem 1.5rem;
-}
-.banner .banner-platform {
-  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-platform.jpg);
-  margin-bottom: 5rem;
 }
 .banner h1,
 .banner p,
@@ -411,26 +268,18 @@ footer .sub-footer .top {
   animation-delay: 1.25s;
 }
 
-.platform .container {
-  width: 100%;
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 1.5em;
+.banner-hero {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-home.jpg);
 }
-.platform .container .container-text {
-  max-width: 100%;
-  width: 70%;
-  line-height: 1.3rem;
+
+.banner-action {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/soccer-banner-bw.jpg);
+  padding: 5rem 1.5rem;
 }
-.platform .container .container-text h2 {
-  text-align: center;
-  padding: 2.5rem 0;
-  text-transform: uppercase;
-}
-.platform .container img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+
+.banner-platform {
+  background-image: linear-gradient(to bottom, #00000099, #00000099), url(../image/banners/hero-platform.jpg);
+  margin-bottom: 5rem;
 }
 
 .build {
@@ -442,9 +291,8 @@ footer .sub-footer .top {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 1.8em;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #000;
-  text-align: center;
 }
 .build h2 {
   font-weight: 600;
@@ -500,4 +348,4 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */

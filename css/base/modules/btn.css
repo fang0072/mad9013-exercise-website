@@ -1,0 +1,36 @@
+.btn-outline {
+  border: 0.125rem solid #057E6C;
+  border-radius: 5rem;
+  display: inline-block;
+  padding: 0.35em 2em 0.45em;
+  background-color: transparent;
+  text-decoration: none;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
+  color: #057E6C;
+  cursor: pointer;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background-color: #196b5b;
+  border-color: #057E6C;
+  transform: translateY(-4px);
+  color: #fff;
+}
+
+.btn-white {
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  display: inline-block;
+  padding: 0.35em 2em 0.45em;
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s background-color 0.2s;
+}
+.btn-white:hover, .btn-white:focus {
+  background-color: #196b5b;
+  border-color: #057E6C;
+  transform: translateY(-4px);
+  color: #fff;
+}
+
+/*# sourceMappingURL=btn.css.map */

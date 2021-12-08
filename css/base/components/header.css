@@ -1,0 +1,124 @@
+.header,
+.header1 {
+  padding: 0.75rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+.header .logo,
+.header .logo1,
+.header1 .logo,
+.header1 .logo1 {
+  margin-bottom: 0.75rem;
+}
+.header .logo img,
+.header .logo1 img,
+.header1 .logo img,
+.header1 .logo1 img {
+  max-width: 9em;
+}
+.header .logo .logo_1,
+.header .logo1 .logo_1,
+.header1 .logo .logo_1,
+.header1 .logo1 .logo_1 {
+  display: inline-block;
+  max-width: 10rem;
+  width: 100%;
+}
+.header .nav ul,
+.header .nav1 ul,
+.header1 .nav ul,
+.header1 .nav1 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav li,
+.header .nav1 li,
+.header1 .nav li,
+.header1 .nav1 li {
+  margin-bottom: 0.75rem;
+}
+.header .nav a,
+.header .nav1 a,
+.header1 .nav a,
+.header1 .nav1 a {
+  text-decoration: none;
+  color: #057E6C;
+  transform: translateY(-2px);
+}
+.header .nav a:focus,
+.header .nav1 a:focus,
+.header1 .nav a:focus,
+.header1 .nav1 a:focus {
+  color: darkblue;
+}
+
+@media only screen and (min-width: 38em) {
+  .header,
+.header1 {
+    text-align: left;
+  }
+  .header .container,
+.header .logo1,
+.header1 .container,
+.header1 .logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .header .container img,
+.header .logo1 img,
+.header1 .container img,
+.header1 .logo1 img {
+    max-width: 8em;
+    padding-left: none;
+  }
+  .header .nav,
+.header .nav1,
+.header1 .nav,
+.header1 .nav1 {
+    flex-grow: 1;
+  }
+  .header .nav ul,
+.header .nav1 ul,
+.header1 .nav ul,
+.header1 .nav1 ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .header .nav ul li,
+.header .nav1 ul li,
+.header1 .nav ul li,
+.header1 .nav1 ul li {
+    margin: 0;
+  }
+  .header .nav ul .sign,
+.header .nav1 ul .sign,
+.header1 .nav ul .sign,
+.header1 .nav1 ul .sign {
+    margin-left: auto;
+  }
+}
+.skipLinks {
+  position: absolute;
+  padding: 4px;
+  left: 50%;
+  transform: translateY(-150%);
+  list-style-type: none;
+  background-color: #bbb;
+  transition: transform 0.2s;
+}
+.skipLinks:focus {
+  transform: translateY(10%);
+}
+.skipLinks a {
+  display: inline-block;
+  color: #031A8C;
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/*# sourceMappingURL=header.css.map */
