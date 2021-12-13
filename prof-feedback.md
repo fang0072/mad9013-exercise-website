@@ -169,3 +169,61 @@ Total: 3.75/5
 - Avoid creating numbered classes like `.tr1`. These are not descriptive enough to describe their purpose. Also, the amount of content and rows could change, which will make the classes unusable.
 - The Premium column should be highlighted with a different text, button, and background color!
 - Use a container! The table should be contained.
+
+
+## Week 10 ----------------------
+
+Code Quality: 1/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 2.5/5
+
+- All `input` need a `label` with text content in it. This is important for accessibility. To visually hide the labels, use the `screen-reader-text` styles discussed in class.
+- The empty labels are causing issues with your grid. Using the `screen-reader-text` styles will solve this.
+- Use `margin: 0 auto;` on your form to center it.
+- you are missing your `box-sizing` on the html which is causing a number of layout and alignment issues. Add the following code to the top of your css file:
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+```
+
+Please make sure you are implementing my feedback. There are numerous issues from previous weeks that I have provided feedback on that are continuing to make new problems.
+
+
+
+## Week 11 ----------------------
+
+Code Quality: 1.5/3
+Design: .75/1
+File Organization & Commits: 1/1
+Total: 3.25/5
+
+- Make sure to complete the WAVE accessibility audit on ALL pages and clear all errors.
+- Skip links should become visible when focused.
+- Consistent on brand focus outline highlights should have been added.
+
+## Week 12 ----------------------
+
+Code Quality: 1/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 2.5/5
+
+- All elements with hover should have a transition property.
+- main.scss Line 357: missing the comma after `color 0.2s`. When applying multiple transitions, you must separate with a comma.
+- Icons are not included
+
+## Week 13 ----------------------
+
+Code Quality: 1.5/3
+File Organization & Commits: 1/2
+Total: 2.5/5
+
+- All filenames should start with and underscore `_`, except your `main.scss` entry point. For example: `_header.scss`
+- Each folder should have a file which collects all of the other files within that folder. For example, in the modules folder there should be a `_modules.scss` file.
+- Numerous styles are missing from the compiled css
